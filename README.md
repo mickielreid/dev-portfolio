@@ -17,18 +17,18 @@ and MongoDb
   
   
   ## Endpoints And Their Meanings:
-  * `api/v1/users` - Get all users
-  * `api/v1/users/findById?user-id=id` - Get user by id
-  * `api/v1/users` - Post on this end point will create a user
-  * `api/v1/users?user-id=id` - Patch on this endpoint will allow you to update this user 
-  * `api/v1/users/user-id` - Delete on this endpoint will allow you to delete this user 
+  * `Get    /api/v1/users` - All users
+  * `Get    /api/v1/users/findById?user-id=id` - Get user by id
+  * `Post   /api/v1/users` -  Create a user
+  * `Patch  /api/v1/users?user-id=id` - Update this user 
+  * `Delete /api/v1/users/user-id` -  Delete this user 
   
 #### For The Projects
-  * `api/v1/pro/save` - Post on this end point will create a new project
-  * `api/v1/pro/save/save/image/{userId}/{proTitle}` - will save the project image 
-  * `api/v1/pro/save/{userId}/{title}` - Patch on this endpoint will allow you to update this project 
-  * `api/v1/pro/save/{userId}/{proTitle}` - Delete on this endpoint will allow you to delete this project and Image 
-  * `api/v1/pro/save/find/{userId}/{proTitle}` - find Project Image
+  * `Post   /api/v1/pro/save` -  Create a new project
+  * `Post   /api/v1/pro/save/image/{userId}/{proTitle}` -  Save the project image 
+  * `Patch  /api/v1/pro/{userId}/{title}` - Update this project 
+  * `Delete /api/v1/pro/{userId}/{proTitle}` - Delete this project and Image 
+  * `Get    /api/v1/pro/find/{userId}/{proTitle}` - find Project Image
 
 
 
